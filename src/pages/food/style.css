@@ -1,0 +1,35 @@
+.catalog_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.catalog_img{ 
+    border-radius: 14%;
+}
+.catalog_text{
+    width: 400px;
+}
+
+.catalog_btn_buy{
+    margin: 5px 0 -5px 0;
+    padding: 5px;
+    border: none;
+    font-size: 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background: #EDA418;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .catalog_btn_buy{
+        font-size: 20px;
+    }
+    .catalog_text{
+        width: 180px;
+    }
+}

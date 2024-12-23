@@ -1,0 +1,81 @@
+.page_footer{
+    width: 100%;
+    max-height: 450px;
+    margin-top: auto;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-image: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #EDA61D 100%);
+}
+
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-top: 160px;
+    gap: 100px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    justify-content: center;
+    list-style: none;
+}
+
+.loyal{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer_text_list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    list-style: none;
+}
+
+
+.footer_contacts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    list-style: none;
+    padding-top: 25px;
+}
+
+.footer_contacts_elem{
+    display: block;
+}
+
+/* адаптация при экране меньше 1250 пикселей */
+@media (max-width: 1250px) {
+    .footer_list{
+        gap: 50px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .footer_text_list{
+        gap: 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+/* адаптация при экране меньше 750 пикселей */
+@media (max-width: 750px) {
+    .footer_list{
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 100px; /*под вопросом*/
+        font-size: 18px;
+        line-height: 20px;
+    }
+}

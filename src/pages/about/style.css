@@ -1,0 +1,33 @@
+.container_aboutus{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.container_aboutus_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+@media (max-width: 1250px) {
+    .container_aboutus_title{
+        font-size: 50px;
+    }
+    .container_aboutus_li{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container_aboutus_title{
+        font-size: 30px;
+    }
+    .container_aboutus_li{
+        font-size: 18px;
+    }
+}

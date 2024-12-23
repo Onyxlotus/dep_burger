@@ -1,0 +1,149 @@
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+    padding: 77px 0 0 0;
+    gap: 150px;
+}
+
+.small_list{
+    display: flex;
+    flex-direction: row;
+}
+
+.comp_logo{
+    display: block;
+    margin-top: auto;
+    width: 360px;
+    height: 75px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+.nav_list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    gap: 100px; 
+    margin: auto 0;
+    padding: 0;
+    margin: auto 33px;
+    list-style: none; 
+}
+
+.nav_item{
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn_buy{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../../img/buy_button.png);
+    border: none;
+    border-radius: 100px;
+}
+
+.nav-item--active {
+	position: relative;
+}
+
+.nav-item--active::before {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: #d37925;
+    border-radius: 3px;
+}
+
+
+/* адаптация при экране меньше 1250 пикселей */
+
+@media screen and (max-width: 1250px) {
+
+    .comp_logo{
+        width: 260px;
+        height: 55px;
+    }
+    
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav_list{
+        gap: 30px; 
+        margin-left: 0px;
+    }
+    
+    .nav_item{
+        font-size: 20px;
+    }
+    
+    .btn_buy{
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        background-size: 55px 55px;
+    }
+}
+
+/* адаптация при экране меньше 750 пикселей */
+
+@media screen and (max-width: 750px){
+    .navigation{
+        justify-content: space-between;
+        padding: 50px 20px 0 20px;
+        gap: 50px;
+    }
+
+    .small_list{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .comp_logo{
+        margin-top: 0;
+        width: 160px;
+        height: 35px;
+    }
+
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav_list{
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .nav_item{
+        width: auto;
+        font-size: 20px;
+    }
+    
+    .btn_buy{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+    }
+}
