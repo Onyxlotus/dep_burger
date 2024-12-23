@@ -23,7 +23,7 @@ const Header = () => {
                         </p>
                     </li>
                     <li>
-                        <NavLink to="/">
+                        <NavLink to="/dep_burger">
                             <button  className="button_to_buy" type="button">
                                     Заказать
                             </button>
